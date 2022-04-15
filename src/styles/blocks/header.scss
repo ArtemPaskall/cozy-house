@@ -1,0 +1,83 @@
+.header {
+  background-image: url(../images/Background-header.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+
+  &__content {
+    height: 595px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 60px 0 270px;
+  }
+
+  &__img-wrap {
+    position: absolute;
+    right: 0;
+    top: 150px;
+  }
+
+  &__img {
+    width: 850px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    text-decoration: none;
+    padding: 10px;
+
+    &--company {
+      font-family: Georgia, "Times New Roman", Arial, serif;
+      font-size: 32px;
+      color: $beige;
+      letter-spacing: 0.08em;
+    }
+
+    &--discription {
+      font-family: Arial, serif;
+      font-size: 13px;
+      color: #fff;
+      letter-spacing: 0.13em;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #cdcdcd;
+    font-family: Arial, serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  &__main-page {
+    padding-left: 10px;
+  }
+
+  &__title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 44px;
+
+    padding-bottom: 45px;
+  }
+
+  &__discription {
+    font-family: Arial, serif;
+    font-weight: normal;
+    color: $text-gray;
+    font-size: 15px;
+
+    max-width: 500px;
+  }
+}
