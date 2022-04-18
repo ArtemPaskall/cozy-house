@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  height: 360px;
+  background-image: url(../images/bg-footer.png);
+  background-position: center;
+  background-size: cover;
+
+
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0;
+
+    &-title {
+      font-family: Georgia, "Times New Roman", Arial, serif;
+      color: #fff;
+      font-size: 35px;
+      letter-spacing: 0.1em;
+
+      margin-bottom: 35px;
+    }
+
+    &-content {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      margin-bottom: 35px;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &-img {
+      margin-right: 15px;
+    }
+
+    &-link {
+      text-decoration: none;
+      font-family: "Times New Roman", Arial, serif;
+      color: $logo-color;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &__bg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+

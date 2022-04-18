@@ -1,0 +1,48 @@
+.help {
+  &__title {
+    font-family: Georgia, "Times New Roman", Arial, serif;
+    font-weight: normal;
+    font-size: 35px;
+    color: $text-color2;
+    letter-spacing: 0.1em;
+
+    text-align: center;
+    margin: 70px 0 70px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 150px;
+  }
+
+  &__card {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img {
+    height: 70px;
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    font-family: Georgia, "Times New Roman", Arial, serif;
+    font-weight: bold;
+    font-style: 20px;
+    color: $text-color2;
+    letter-spacing: 0.2em;
+  }
+}

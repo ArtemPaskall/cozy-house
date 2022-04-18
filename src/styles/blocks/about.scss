@@ -1,11 +1,14 @@
 .about {
   background-color: #fff;
+  position: relative;
+  z-index: 2;
 
   &__wrap {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding-top: 90px;
+    margin-bottom: 35px;
   }
 
   &__img-container {
@@ -16,8 +19,10 @@
 
     &-title {
       font-family: Georgia, "Times New Roman", Arial, serif;
+      font-weight: normal;
       font-size: 35px;
-      color: $text-darkGray;
+      color: $text-color2;
+      letter-spacing: 0.1em;
 
       padding-bottom: 35px;
     }
@@ -25,11 +30,10 @@
     &-text {
       font-family: Arial, serif;
       font-size: 15px;
-      color: $text-darkGray;
+      color: $text-color2;
 
       padding-bottom: 35px;
       width: 430px;
     }
-
   }
 }
