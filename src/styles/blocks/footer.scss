@@ -7,6 +7,9 @@
   @media (max-width: 800px) {
     height: 550px;
   }
+  @media (max-width: 400px) {
+    height: 600px;
+  }
 
   &__wrap {
     display: flex;
@@ -43,6 +46,10 @@
       letter-spacing: 0.1em;
 
       margin-bottom: 35px;
+
+      @media (max-width: 400px) {
+        font-size: 25px;
+      }
     }
 
     &-content {

@@ -22,6 +22,10 @@
     @media (max-width: 1000px) {
       display: none;
     }
+
+    @media (max-width: 1400px) {
+      display: none;
+    }
   }
 
   &__img {
@@ -107,6 +111,10 @@
     font-size: 44px;
 
     padding-bottom: 45px;
+
+    @media (max-width: 400px) {
+      font-size: 35px;
+    }
   }
 
   &__discription {
