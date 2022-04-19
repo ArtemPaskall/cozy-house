@@ -7,7 +7,7 @@
     letter-spacing: 0.1em;
 
     text-align: center;
-    margin: 70px 0 70px;
+    margin: 70px 0;
   }
 
   &__cards {
@@ -18,13 +18,17 @@
     flex-wrap: wrap;
     row-gap: 80px;
     column-gap: 150px;
+
+    @media (max-width: 950px) {
+      row-gap: 40px;
+    }
   }
 
   &__card {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     transition: transform 0.3s;
 

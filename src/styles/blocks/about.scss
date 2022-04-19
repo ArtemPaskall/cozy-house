@@ -9,10 +9,19 @@
     align-items: center;
     padding-top: 90px;
     margin-bottom: 35px;
+
+    @media (max-width: 1060px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__img-container {
     margin: 0 auto;
+
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 
   &__content {
