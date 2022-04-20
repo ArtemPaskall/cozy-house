@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 
   &__content {
     height: 595px;
@@ -12,24 +13,33 @@
     justify-content: space-between;
 
     padding: 60px 0 270px;
+
+    @media (max-width: 800px) {
+      padding-bottom: 70px;
+    }
   }
 
   &__img-wrap {
     position: absolute;
-    right: 0;
     top: 150px;
+    right: 0;
 
-    @media (max-width: 1000px) {
-      display: none;
-    }
-
-    @media (max-width: 1400px) {
-      display: none;
+    @media (max-width: 1250px) {
+      top: 250px;
+      right: -220px;
     }
   }
 
   &__img {
     width: 850px;
+
+    @media (max-width: 1250px) {
+      width: 750px;
+    }
+
+    @media (max-width: 950px) {
+      display: none;
+    }
   }
 
   &__menu {
